@@ -16,16 +16,25 @@
 .card{
     display: flex; 
     flex-wrap: wrap; 
-position: absolute;  
-padding: 200px 400px; 
-margin-left: 200px;
-margin-top: 140px;
-border: 5px dashed #FF300D;
-border-radius: 22px;
-background: linear-gradient(to right, #0f0c29, #302b63, #24243e);;
+    position: absolute;  
+    padding: 200px 400px; 
+    margin-left: 400px;
+    margin-top: 140px;
+    border: 5px dashed #FF300D;
+    border-radius: 50px;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);;
 }
 
-
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
 
 .header {
     display: flex;
@@ -42,9 +51,12 @@ background: linear-gradient(to right, #0f0c29, #302b63, #24243e);;
 .header1 {
     display: flex;
     align-content: flex-start;
-   font-size: 25px;
+    font-size: 25px;
     color: #FFFFFF;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
     color: #FFFFFF;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);; 
+}
+
+

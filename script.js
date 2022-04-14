@@ -1,24 +1,22 @@
-var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_ct2en8fp?title_type=feature&genres=action&countries=us&moviemeter=4000,7000'
-var horror = document.querySelector("#horror")
+var buttons = document.querySelector("#buttons");
+const button1 = document.getElementById("comedy")
+const button2 = document.getElementById("drama")
+const button3 = document.getElementById("horror")
+var buttonSelected = document.getElementsByClassName(".button")
 
-$.ajax({
-    url: requestUrl,
-    method: 'GET',
-}).then(function (response) {
-    console.log('AJAX Response \n-------------');
-    console.log(response); 
+buttons.addEventListener('click', function(event){
+    // var genre = document.querySelectorAll('#comedy, #drama, #horror');
+    // console.log(genre)
+    
+    window.open(
+        "2nd.html", "_blank"
+    );
 })
 
-//function for getting horror movies
-    //put data onto second page container
-
-//function for getting comedy movies
-    //put data onto second page container
-
-//function for getting drama movies
-    //put data onto second page container
-
-
-horror.addEventListener('click',function(){
-    console.log("ive been clicked");
-})
+const onClick = function() {
+    localStorage.setItem('genre', this.id);
+    console.log(localStorage);
+  }
+  document.getElementById("comedy").onclick = onClick;
+  document.getElementById("drama").onclick = onClick;
+  document.getElementById("horror").onclick = onClick;

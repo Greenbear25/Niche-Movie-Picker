@@ -12,7 +12,8 @@ buttons.addEventListener('click', function(event){
 
 const onClick = function() {
     sessionStorage.setItem('genre', this.id);
-    console.log(sessionStorage);
+    // console.log(sessionStorage);
+    //if theres data in storage already, clear and then add
   }
   document.getElementById("comedy").onclick = onClick;
   document.getElementById("drama").onclick = onClick;

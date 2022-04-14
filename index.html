@@ -10,27 +10,37 @@
       href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
    <link rel="stylesheet" href="./style.css" />
     <title>Niche Movie Picker</title>
   </head>
   <header>
-    <h1 class="header"> Niche Movie Picker</h1>
-    <p class="p"><strong>It's simple, just choose the movie genre you're interested in and then browse through our niche movie suggestions!</strong></p>
-    <p class="p"><strong>Approved by all movie lovers!*</strong></p>
-      </header>
-  <body class ="body">
-    <section>
-      <div class=>
-        <div class="card">
-          <h1 class="header1">Choose a Movie Genre</h1>
-            <div>
-            <button class="button">Comedy</button>
-            <button class="button">Drama</button>
-            <button class="button">Horror</button>
+    <h1 class="h1"> Niche</h1>
+      <div class="par">
+        <p class="p"><strong>Welcome to NICHE! With so many movies and so little time</strong></p>
+        <p class="p"><strong>allow us to suggest some movies outside of the mainstream that are worth your time!</strong></p>
+        <p class="p"><strong>Simply choose your favorite genre and watch some underappreciated movies.</strong></p>
+        <p class="p"><strong>Approved and beloved by ALL movie lovers!*</strong></p>
+      </div>
+    </header>
+  <body class="body">
+    <section class="block card">
+      <div>
+        <h4 class="h4">Choose a Movie Genre</h4>
+      </div>
+        <div id="buttons" class="div">
+          <button class="button" id="comedy">Comedy</button>
+          <button class="button" id="drama">Drama</button>
+          <button class="button" id="horror">Horror</button>
         </div>
       </div>
     </section>
      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="./script.js"></script>
   </body>
+  <footer>
+    <div>
+      <p class="footer"><strong>*Not actually approved or beloved. Don't sue us.</strong></p>
+  </div>
+  </footer>
 </html>

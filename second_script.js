@@ -8,7 +8,7 @@ const test = document.querySelector("#test");
 var genre = sessionStorage.getItem('genre');
 // console.log(genre)
 
-var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_ct2en8fp?title_type=feature&genres=' + genre + '&countries=us&moviemeter=10000,11000';
+var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_9vi9km43?title_type=feature&genres=' + genre + '&countries=us&moviemeter=10000,11000';
 
 var movieData;
 

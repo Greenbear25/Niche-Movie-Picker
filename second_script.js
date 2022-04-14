@@ -3,10 +3,10 @@ const descript = document.querySelector("#movie-disc");
 const poster = document.querySelector("#movie-img");
 const test = document.querySelector("#test");
 
-// console.log(sessionStorage)
+console.log(sessionStorage)
 
 var genre = sessionStorage.getItem('genre');
-// console.log(genre)
+console.log(genre)
 
 var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_9vi9km43?title_type=feature&genres=' + genre + '&countries=us&moviemeter=10000,11000';
 
@@ -15,7 +15,7 @@ var movieData;
 window.onload = function(){
     
     
-    //   console.log(movieData);
+      console.log(movieData);
       
 }
 

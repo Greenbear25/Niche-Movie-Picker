@@ -24,7 +24,7 @@ var movieData;
 window.onload = function(){
     
     
-      console.log(movieData);
+      // console.log(movieData);
       
 }
 

@@ -14,7 +14,7 @@ const poster4 = document.querySelector("#movie-img4");
 
 console.log(sessionStorage)
 
-var genre = sessionStorage.getItem('genre');
+var genre = localStorage.getItem('genre');
 console.log(genre)
 
 var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_ct2en8fp?title_type=feature&genres=' + genre + '&countries=us&moviemeter=10000,11000';
@@ -49,6 +49,10 @@ var renderData = function(data){
     var mPlot2 = data.results[1].plot
     var mPlot3 = data.results[2].plot
     var mPlot4 = data.results[3].plot
+    var mPoster = data.results[0].image
+    var mPoster2 = data.results[1].image
+    var mPoster3 = data.results[2].image
+    var mPoster4 = data.results[3].image
     title.innerHTML = mTitle
     title2.innerHTML = mTitle2
     title3.innerHTML = mTitle3
@@ -57,6 +61,10 @@ var renderData = function(data){
     descript2.innerHTML = mPlot2
     descript3.innerHTML = mPlot3
     descript4.innerHTML = mPlot4
+    poster.src = mPoster
+    poster2.src = mPoster2
+    poster3.src = mPoster3
+    poster4.src = mPoster4
 
 }
 

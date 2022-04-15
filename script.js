@@ -11,8 +11,14 @@ buttons.addEventListener('click', function(event){
 })
 
 const onClick = function() {
-    sessionStorage.setItem('genre', this.id);
-    // console.log(sessionStorage);
+    if(localStorage.getItem('genre') != null){
+        localStorage.removeItem();
+    }
+    else{
+        localStorage.setItem('genre', this.id);
+    }
+    // sessionStorage.setItem('genre', this.id);
+    console.log(localStorage);
     //if theres data in storage already, clear and then add
   }
   document.getElementById("comedy").onclick = onClick;

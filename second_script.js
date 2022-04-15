@@ -17,7 +17,7 @@ console.log(sessionStorage)
 var genre = localStorage.getItem('genre');
 console.log(genre)
 
-var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_ct2en8fp?title_type=feature&genres=' + genre + '&countries=us&moviemeter=10000,11000';
+var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_iu5n2ier?title_type=feature&genres=' + genre + '&countries=us&moviemeter=10000,11000';
 
 var movieData;
 

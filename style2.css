@@ -20,9 +20,23 @@ body {
   text-shadow: 0 0 5px rgb(67, 233, 45), 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18; 
 }
 
-.product-feature-section {
-  e6; 
+.product-feature-section { 
    padding: 1rem;
+}
+
+button{
+  flex-wrap: wrap;
+  background-color: #4CAF50; 
+  border: none;
+  border-radius: 45px;
+  color: white;
+  font-family:'Pacifico', cursive;
+  letter-spacing: 2.5px;
+  text-shadow: 0 0 2px rgb(67, 233, 45), 0 0 2.5px rgb(255, 255, 255), 0 0 5px #FFF, 0 0 20px #49ff18, 0 0 30px #6dff45, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  padding: 15px 20px;
+  margin: auto;
+  text-align: center;
+  font-size: 22px;
 }
 
 *::-webkit-scrollbar-track {

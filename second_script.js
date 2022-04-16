@@ -10,6 +10,7 @@ const poster = document.querySelector("#movie-img");
 const poster2 = document.querySelector("#movie-img2");
 const poster3 = document.querySelector("#movie-img3");
 const poster4 = document.querySelector("#movie-img4");
+const back = document.querySelector("#backBtn")
 
 
 console.log(sessionStorage)
@@ -25,7 +26,8 @@ window.onload = function(){
     
     
       // console.log(movieData);
-      
+
+
 }
 
 var apiCall = function(){
@@ -81,6 +83,13 @@ var renderData = function(data){
 }
 
 apiCall();
+
+back.addEventListener('click', function(event){
+  window.open(
+    "index.html", "_blank"
+  );
+  
+})
 
 
 // make a loop to grab the first 4 movies

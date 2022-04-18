@@ -18,8 +18,7 @@ console.log(sessionStorage)
 var genre = localStorage.getItem('genre');
 console.log(genre)
 
-var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_a7a2x3v6?title_type=feature&release_date=1929-04-17,2022-04-17&genres=' + genre + '&countries=us&moviemeter=7000,14000&count=250';
-
+var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_iu5n2ier?title_type=feature&user_rating=1.0,8.4&release_date=1929-04-17,2022-04-17&num_votes=10000,150000&genres=' + genre + '&has=awards&online_availability=US/today/Amazon/subs,US/today/Amazon/paid,US/today/Amazon/subs&countries=us&moviemeter=8000,30000&count=250&sort=boxoffice_gross_us,desc'
 var movieData;
 
 window.onload = function(){

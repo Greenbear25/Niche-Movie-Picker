@@ -22,6 +22,7 @@
     min-width: 400px;
     width: 1100px;
     margin: auto;
+    margin-bottom: 50px;
 }
 
 .block {
@@ -105,6 +106,13 @@
     font-size: 15px;
 }
 
+.video {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 620px;
+}
 .footer {
     margin-top: 228px;
     margin-left: 10px;

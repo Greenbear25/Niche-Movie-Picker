@@ -18,7 +18,7 @@ console.log(sessionStorage)
 var genre = localStorage.getItem('genre');
 console.log(genre)
 
-var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_iu5n2ier?title_type=feature&genres=' + genre + '&countries=us&moviemeter=10000,11000';
+var requestUrl = 'https://imdb-api.com/API/AdvancedSearch/k_m4a2t7oy?title_type=feature&genres=' + genre + '&countries=us&moviemeter=10000,11000&count=250';
 
 var movieData;
 
@@ -44,7 +44,7 @@ var apiCall = function(){
 
 function random_item() {
 console.log()  
-randomInt = Math.floor(Math.random()*49);
+randomInt = Math.floor(Math.random()*249);
 return randomInt
      
 }
@@ -85,6 +85,7 @@ var renderData = function(data){
 apiCall();
 
 back.addEventListener('click', function(event){
+  localStorage.clear();
   window.open(
     "index.html", "_blank"
   );
